@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./style.css">
+    <title>Convert binary</title>
+</head>
+<body>
+    <div class="app">
+        <header>
+            <h2 class="title">Convert base</h2>
+        </header>
+        <div class="container">
+            <div class="wrapper">
+                <div class="box_input">
+                    <select name="typeConvert" id="typeConvert">
+                        <option value="10" selected>Decimal</option>
+                        <option value="2" >Binary</option>
+                        <option value="8">Octal</option>
+                        <option value="16">Hexadecimal</option>
+                    </select>
+                    <input type="text" placeholder="Number..." class="input">
+                </div>
+                <i class='bx bxs-right-arrow-alt'></i>
+                <div class="box_result">
+                    <select name="typeConvert" id="typeConvert" onchange="Render()">
+                        <option value="10">Decimal</option>
+                        <option value="2" selected>Binary</option>
+                        <option value="8">Octal</option>
+                        <option value="16">Hexadecimal</option>
+                    </select>
+                    <input type="text" placeholder="Number..." class="input" disabled>
+                </div>
+            </div>
+            <button class="btn convert-btn">Convert</button>
+        </div>
+    </div>
+</body>
+<script src="./app.js"></script>
+</html>
